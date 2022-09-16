@@ -1,0 +1,283 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 30px 30px;
+
+
+
+
+}
+
+.navbar {
+    display: inline;
+    align-items: center;
+    width: 100px
+}
+
+
+
+
+.logo {
+    width: 70px;
+    margin: 10px 0px 0px 25px;
+    cursor: pointer;
+}
+
+.navbar p:hover {
+    color: red;
+}
+
+.navbar p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leaf {
+    width: 60px;
+    margin: 0px 0px 0px 100px;
+    position: absolute;
+    top: 110px;
+    cursor: pointer;
+
+}
+
+nav {
+
+    float: right;
+    margin: 0px 50px;
+    font-size: 18px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0px 5px 50px 0px;
+
+
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav li a:hover {
+    color: blue;
+}
+
+
+
+
+
+.full img {
+    width: 1300px;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+}
+
+.full h4 {
+    width: 250px;
+    text-align: left;
+    position: absolute;
+    top: 230px;
+    margin: 0px 20px;
+    z-index: -1;
+    font-size: 25px;
+    color: white;
+}
+
+#rai {
+    margin: 100px 50px 0px;
+
+}
+
+.part img {
+    width: 300px;
+    margin: 25px 50px 2px;
+
+}
+
+.part h2 {
+    position: absolute;
+    top: 740px;
+    margin: 0px 50px 20px 45px;
+}
+
+
+.part p {
+    width: 300px;
+    margin: 0px 50px 0px;
+
+}
+
+.part {
+    float: right;
+
+    margin-left: 4px;
+}
+
+.prot h2 {
+    margin: 0px 50px 0px;
+}
+
+.prot img {
+    width: 300px;
+    height: 200px;
+    margin: 0px 50px 0px;
+}
+
+.prot p {
+    width: 220px;
+    margin: 0px 50px 0px;
+}
+
+.prot {
+    float: right;
+
+    margin-left: 99px;
+}
+
+.zanu img {
+    width: 300px;
+    height: 200px;
+    margin: 0px 50px 0px;
+
+}
+
+.zanu p {
+    width: 230px;
+    margin: 0px 50px 0px;
+}
+
+.zanu h2 {
+    margin: 0px 50px 0px;
+}
+
+.zanu {
+    position: absolute;
+
+    float: left;
+
+
+}
+
+.points p {
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(lightgreen, yellow);
+    margin: 10px 100px 0px 100px;
+
+}
+
+
+button {
+    margin: 50px 0px 0px 0px;
+    border: 1px solid black;
+    width: 200px;
+    background: linear-gradient(red, blue);
+    transition-property: background, width;
+    transition-duration: 3s;
+    border-radius: 4px;
+    position: relative;
+    left: 30%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+button img {
+    width: 50px;
+    display: none;
+
+}
+
+button:hover img {
+    display: block;
+}
+
+
+
+button:hover {
+    width: 250px;
+    background: linear-gradient(yellow, rgb(4, 255, 0));
+    display: flex;
+}
+
+
+
+.para p {
+    margin: 50px 50px 0px 100px;
+    font-size: 20px;
+
+
+}
+
+.para img {
+    float: left;
+    width: 300px;
+    margin: 0px 25px 0px 100px;
+    animation-name: sample;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes sample {
+    from {
+        border-radius: 0%;
+    }
+
+    to {
+        border-radius: 50%;
+    }
+}
+
+.footer {
+    text-align: right;
+    margin-right: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.social-icons img {
+    width: 50px;
+    float: right;
+    margin: 10px;
+}
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        border: 1px solid black;
+        width: 100%;
+        background: linear-gradient(rgb(255, 192, 222), yellow);
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        z-index: 2;
+    }
+
+    nav li {
+        display: block;
+        margin-top: 1px;
+        margin-bottom: 0px;
+    }
+}
